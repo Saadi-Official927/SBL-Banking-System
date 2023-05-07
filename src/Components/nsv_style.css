@@ -1,0 +1,238 @@
+div #carouselExampleIndicators{
+    font-weight: bold;
+    position: relative;
+    animation: rToL 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes rToL {
+    /* from {right: 150%;}
+    to {right: 0%;} */
+    0%   {right:-1000px; top:0px;}
+    100%   {right:0px; top:0px;}
+}
+
+div #AdvanImage{
+    font-weight: bold;
+    position: relative;
+    animation: lToR 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes lToR {
+    /* from {right: 150%;}
+    to {right: 0%;} */
+    0%   {left:-350px; top:0px;}
+    100%   {left:0px; top:0px;}
+}
+
+div #AdvanText{
+    font-weight: bold;
+    position: relative;
+    animation: rToL 1s;
+    animation-timing-function: ease-in;
+}
+div #vdeitailsbtn {
+    font-weight: bold;
+    position: relative;
+    animation: bToT 1s;
+    animation-timing-function: ease-in;
+    transition: transform .4s;
+}
+@keyframes bToT{
+    0%   {bottom: -40px;}
+    100%   {bottom:0px;}
+}
+div #vdeitailsbtn:hover{
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+    transform: scale(1.2);
+}
+div  #wvideosbtn{
+    font-weight: bold;
+    position: relative;
+    animation: bToT .5s;
+    animation-timing-function: ease-in;
+    transition: transform .2s;
+}
+div  #wvideosbtn:hover{
+    transform: scale(1.2);
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+}
+
+div #tVideo{
+    position: relative;
+    animation: tToB 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes tToB{
+    0% {top: -1000px;}
+    100% {top: 0px;}
+}
+
+div #svgText{
+    font-size: 50px;
+    font-weight:lighter;
+}
+
+
+ul #home-tab{
+    font-size: 17px;
+    transition: transform .5s;
+}
+ul #contact-tab{
+    font-size: 17px;
+    transition: transform .5s;
+}
+
+
+ul #home-tab:hover{
+    border: 2px solid green;
+    transform: scale(1.2);
+}
+ul #contact-tab:hover{
+    transform: scale(1.2);
+    border: 2px solid green;
+}
+
+
+
+div #pills-home-tab{
+    color: white;
+    background-color: green;
+}
+div #pills-profile-tab{
+    background-color: green;
+    color: white;
+}
+div #pills-home-tab:hover{
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+}
+div #pills-profile-tab:hover{
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+}
+
+
+
+div #app_konnect{
+    display: flex;
+    flex-direction: row;
+}
+@media (min-width: 0px) and (max-width: 1120px) { 
+    div #app_konnect{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+
+
+
+
+
+ /* discounts styling */
+ @media (min-width: 1100px) and (max-width: 1275px) {
+    div #discount-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+             /* workin on it */
+/* @media (min-width: 576px) and (max-width: 1100px) {
+    div #discount-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+} */
+/* ------------------------------------------------ */
+
+@media (min-width: 0px) and (max-width: 575px) {
+    div #discount-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* cards stylings */
+
+div #car_loan_price_text{
+    color:green;
+    border: 2px solid green;
+}
+
+
+@media (min-width: 0px) and (max-width: 1250px) { 
+    div #images_1stSlide{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+div #images_anchor{
+    transition: transform .4s;
+}
+
+ div #images_anchor:hover{
+    transform: scale(1.2);
+ }
+
+ div #icons_set{
+    color: black;
+     opacity: .85;
+     transition: transform .4s;
+ }
+ div #icons_set:hover{
+    color: green;
+    transform: scale(1.1);
+ }
+
+
+ @media (min-width: 0px) and (max-width: 1250px) { 
+    div #icon_flex{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+ div #footer_line{
+    border: 1px solid rgb(176, 176, 176);
+ }
+
+
+ /* login page  */
+ div #pills-register{
+    opacity: 0.8;
+ }
+ div #pills-login {
+    opacity: 0.8;
+ }
+ div #pills-register:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+ }
+ div  #pills-login:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    
+ }
