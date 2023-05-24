@@ -45,13 +45,13 @@ function Deposit_Balance(props) {
     // minLength={5} required   ===> it will work only on  onSubmit button in form, but we used onClick function and handled by JS 
     <>
       <div className="container">
-        <h1 className='text-center' >Add Cash</h1>
+        <h1 className='text-center' >Create Account</h1>
         <form className='container my-3 col-md-5 mb-5'>
           <div className="mb-3">
             <label htmlFor="cash" className="form-label">Enter Cash Amount</label>
             <input type="number" className={`form-control`} id="cash" name='cash' placeholder={'Cash Amount'} onChange={onChange} value={deposit.cash} />
           </div>
-          <button type="submit" className="btn btn-primary" onClick={addCashClick}>Add Cash</button>
+          <button type="submit" className="btn btn-success" onClick={addCashClick}>Add Cash</button>
         </form>
       </div>
     </>

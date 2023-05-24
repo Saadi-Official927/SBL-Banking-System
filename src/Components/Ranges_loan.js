@@ -1,5 +1,6 @@
 import React from 'react'
 export default function Ranges_loan(props) {
+
     const y = parseInt(props.incrementCarPrice / props.incrementMonth)
     const x = parseInt(props.incrementPersonalPrice / props.incrementMonth)
 
@@ -42,7 +43,7 @@ export default function Ranges_loan(props) {
                                 </div>
                                 <h4 className='text-success'>INSTALLMENTS YOU HAVE TO PAY</h4>
                                 <div className="text-center ml-2 my-3 p-3" id='car_loan_price_text'>
-                                    <h2>{y} </h2>
+                                    <h2> {!y ? '0' : y } </h2>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +68,7 @@ export default function Ranges_loan(props) {
                                 </div>
                                 <h4 className='text-success'>INSTALLMENTS YOU HAVE TO PAY</h4>
                                 <div className="text-center ml-2 my-3 p-3" id='car_loan_price_text'>
-                                    <h2>{x} </h2>
+                                    <h2>{!x ? '0' : x} </h2>
                                 </div>
                             </div>
                         </div>

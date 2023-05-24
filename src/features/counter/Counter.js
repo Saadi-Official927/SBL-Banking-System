@@ -23,6 +23,8 @@ import Navbar_login from '../../Components/Navbar_login'
 import AtmMachine from '../../Components/AtmMachine'
 import Deposit_Balance from '../../Components/Deposit_Balance'
 import Balance_Checking from '../../Components/Balance_Checking'
+import Transfer_Balance from '../../Components/Transfer_Balance'
+import Load_easytop from '../../Components/Load_easytop'
 
 
 
@@ -113,6 +115,26 @@ export function Counter() {
               <Navbar_login />
               <AtmMachine />
               <Balance_Checking increamentByClick={increamentByClick} decreamentByClick={decreamentByClick} count={count}
+                incrementByAmountFunction={incrementByAmountFunction} incrementAmount={incrementAmount}
+                changingValuesForDeposit={changingValuesForDeposit} />
+              <Footer_Login />
+            </React.Fragment>
+          } />
+          <Route path='/transfer-the-balance' element={
+            <React.Fragment >
+              <Navbar_login />
+              <AtmMachine />
+              <Transfer_Balance increamentByClick={increamentByClick} decreamentByClick={decreamentByClick} count={count}
+                incrementByAmountFunction={incrementByAmountFunction} incrementAmount={incrementAmount}
+                changingValuesForDeposit={changingValuesForDeposit} />
+              <Footer_Login />
+            </React.Fragment>
+          } />
+          <Route path='/packages' element={
+            <React.Fragment >
+              <Navbar_login />
+              <AtmMachine />
+              <Load_easytop increamentByClick={increamentByClick} decreamentByClick={decreamentByClick} count={count}
                 incrementByAmountFunction={incrementByAmountFunction} incrementAmount={incrementAmount}
                 changingValuesForDeposit={changingValuesForDeposit} />
               <Footer_Login />

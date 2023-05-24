@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Get_Check_Balance from './Get_Check_Balance'
+import Get_Update_Check from './Get_Update_Check'
 
-function Balance_Checking(props) {
 
+function Transfer_Balance(props) {
     const { increamentByClick, decreamentByClick, count, incrementByAmountFunction, incrementAmount, changingValuesForDeposit } = props
 
     const history = useNavigate()
@@ -90,12 +90,13 @@ function Balance_Checking(props) {
         <>
             <div className="container">
                 <div className={`mb-3 ${on === 'false' ? 'd-none' : ''} `}>
-                    <label htmlFor="addAmount" className="form-label">Deposit Cash</label>
-                    <input type="number" className="form-control" id="addAmount" name='addAmount' aria-describedby="emailHelp" onChange={changingValuesForDeposit} placeholder='Add Cash to Account' />
-                    <button onClick={incrementByAmountFunction} type="button" className="btn btn-success my-2">Deposit Cash</button>
+                    <label htmlFor="addAmount" className="form-label">Transfer Amount</label>
+                    <input type="number" className="form-control" id="addAmount" name='addAmount' aria-describedby="emailHelp" onChange={changingValuesForDeposit} placeholder='Withdraw Amount' max={0} />
+                    <button onClick={incrementByAmountFunction} type="button" className="btn btn-success my-2">Withdraw Amount</button>
                 </div>
                 <div className={`mb-3 ${on === 'false' ? 'd-none' : ''} `}>
-                    <input  type="number" className="form-control" id="cash" name='cash' aria-describedby="emailHelp" placeholder={`Enter total Amount to Deposit ${x} `}  onChange={onChange} />
+                    <label htmlFor="cash" className="form-label">Please Enter the Updated amount</label>
+                    <input type="number" className="form-control" id="cash" name='cash' aria-describedby="emailHelp" placeholder={`Enter total Amount ${x} `} onChange={onChange} />
                     <button onClick={updateCashClick} type="button" className="btn btn-success my-2">Update Cash</button>
                 </div>
             </div>
@@ -103,7 +104,7 @@ function Balance_Checking(props) {
                 <div className="container row mx-3 ">
                     <h5 className='text-center'> {Cash.length === 0 && "No Cash "}</h5>
                     {Cash.map((get) => {
-                        return <Get_Check_Balance updateEditCash={updateEditCash} get={get} />
+                        return <Get_Update_Check updateEditCash={updateEditCash} get={get} />
                     })}
                 </div>
             </div>
@@ -111,4 +112,4 @@ function Balance_Checking(props) {
     )
 }
 
-export default Balance_Checking
+export default Transfer_Balance

@@ -77,10 +77,10 @@ export default function Navbar(props) {
                             <Link className="nav-link rounded text-light btn btn-outline-success px-3 " to="/check-the-balance">Check the Balance <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link rounded text-light btn btn-outline-success px-3 " href="#">Transfer the Balance</a>
+                            <Link className="nav-link rounded text-light btn btn-outline-success px-3 " to="/transfer-the-balance">Transfer the Balance</Link>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link rounded text-light btn btn-outline-success px-3 " href="#">Top-up/ Easy Loadon Sim</a>
+                            <Link className="nav-link rounded text-light btn btn-outline-success px-3 " to="/packages">Top-up/ Easy Loadon Sim</Link>
                         </li>
                     </ul>
                 </nav>
